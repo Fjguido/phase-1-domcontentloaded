@@ -5,7 +5,7 @@ describe( "index.js", () => {
       .to.equal( "JavaScript is so cool. It lets me add text to my page programmatically." );
 
     const event = document.createEvent( 'Event' );
-    event.initEvent( 'DOMContentLoaded', true, true );
+    event.initEvent( 'DOMContentLoad', true, true );
     window.document.dispatchEvent( event );
 
     expect( document.querySelector( 'p' )
